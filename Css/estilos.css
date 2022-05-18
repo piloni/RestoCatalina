@@ -1,0 +1,493 @@
+body 
+{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Header con efecto ola*/
+header {
+    width: 100%;
+    height: 500px;
+    background: url(../images/fondo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+/*Menu navegación*/
+nav{
+  text-align: right;
+  padding: 30px 50px 0 0;
+}
+
+nav > a{
+  color:#fff;
+  font-weight: 400;
+  text-decoration: none;
+  margin-right: 10px; 
+}
+
+nav > a:hover{
+  text-decoration: underline;
+}
+
+header .textos-header{
+  display: flex;
+  height: 430px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.textos-header h1{
+  font-size: 100px;
+  color:#fff;
+}
+
+.textos-header h2{
+  font-size: 30px;
+  font-weight: 300;
+  color:#fff;
+}
+
+.wave{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.titulos {
+    color: blue;
+    background-color: rgb(205, 241, 184);
+    border: 1px solid black;
+  }
+  .titulo-h2{
+    font-size: 30px;
+    border-style:none
+  }
+  .subtitulos{
+    font-size: 30px;
+    color: #6924A5;
+    padding: 0 0 10px 0;
+    text-align: center;
+    text-decoration:none;
+    text-justify: auto;
+    text-transform: uppercase;  
+  }
+  /* Parrafos */
+  p {
+    color: white;
+  }
+  
+  .css-button-reservar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:45%;
+  margin-right:25%;
+}
+
+  .css-button-sliding-to-top--red {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #6924A5;
+    background: #6924A5;
+    color: white;
+  }
+  .css-button-sliding-to-top--red:hover {
+    color: #6924A5;
+    background: white;
+  }
+  .css-button-sliding-to-top--red:hover:after {
+    height: 100%;
+  }
+  .css-button-sliding-to-top--red:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 50%;
+    background: white;
+  }
+  .footer {
+    width: auto;
+    padding: 30px 30px 20px 30px;
+    background-color: rgb(12, 10, 10);
+    border-top: 1px solid #e5e5e5;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    bottom: 0;
+  }
+
+  /*Nuestros platos*/
+  .nuestrosPlatos{
+   
+    width: 100%;
+    height: 100%;
+    color: #0e0305;
+    background: white;
+    padding: 5px;
+    border: 5px none; 
+    overflow: hidden;
+
+  }
+  .contenedor-Platos > h2{
+    display: flex; 
+    margin-bottom: 15px;
+    display: inline-block;
+
+  }
+
+  .subH3{
+    text-align: center;
+    text-justify: auto;
+    padding-top: 10px;
+    color: #6924a5;
+
+  }
+  .contenedor-Platos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .servicio-ind{
+    text-align: center;
+
+  }
+  .platos img{
+    image-rendering: pixelated;
+    object-fit:cover;
+    align-items: center;
+    display: block;
+
+    filter: grayscale(100%);
+    transition: all .5s;
+    position: relative;
+    border-radius: 5px;
+  }
+
+  .platos img:hover {
+    filter: grayscale(0);
+    transform: scale(1.2);
+    z-index: 2;
+    cursor: pointer;
+    outline: solid 3px white;
+}
+
+  .platos > p{
+    color: black;
+    display:grid;
+    justify-content: center;
+    text-align: justify;
+    width: 120px;
+  }
+
+  .reservas{
+    color: #0e0305;
+    background: #f3dbf2;
+    padding: 5px;
+    border: 0px note;  
+    border-bottom: 0 0 0 0;
+  }
+  .Resev{
+    display: flex;
+    align-items: stretch;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin:initial;
+  }
+  .contenedor-reservas h3{
+    text-align: center;
+    color:black;
+  }
+  .contenedor-reservas form{
+    background: #f3dbf2;
+    padding: 2% 2% 2% 2%;
+  }
+  .BtnReservar {
+    background: #6924A5;
+    color: white;
+    width: 100px;
+  }
+  .Resev_1{
+    margin-left: auto;
+  }
+
+
+  
+  .Services{
+    color: #0e0305;
+    background: white;
+    padding: 5px;
+    border: 5px none; 
+  }
+  .contenedor-servicios{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #FFE4C4;
+    padding-bottom: 20px;
+  }
+
+  .sevice > img{
+    image-rendering: pixelated;
+    object-fit:contain;
+    align-items: center;
+    display:flexbox;
+
+  }
+.sevice > p{
+  color: black;
+  display:block;
+  text-align: justify;
+  width: 120px;
+}
+  .img{
+    border-radius: 25px;
+    padding: 7px;
+  }
+  
+  /*quienesSomos*/
+  .about-services{
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.about-services h2{
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.servicio-cont{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.servicio-ind{
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 70%;
+    text-align: center;
+}
+
+.servicio-ind img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: all .5s;
+    position: relative;
+    border-radius: 5px;
+}
+.servicio-ind img:hover{
+  filter: grayscale(0);
+  transform: scale(1.2);
+  z-index: 2;
+  cursor: pointer;
+  outline: solid 3px white;
+} 
+
+.servicio-ind h3{
+    margin: 10px 0;
+}
+
+.servicio-ind p{
+    font-weight: 500;
+    color: black;
+    text-align: justify;
+    border: 2px solid #f3dbf2;
+    border-radius: 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+/*Menu*/
+.contenedor-menu h3{
+  padding-bottom: 10px;
+}
+.contenedor-menu form{
+  padding: 0 0 0 0;
+  background: white;
+  text-align: center;  
+
+}
+.contenedor-menu button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*footer*/
+
+footer{
+  background: #414141;
+  padding: 60px 0 5px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+.contenedor-footer{
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.content-foo{
+  text-align: center;
+}
+
+.content-foo h4{
+  color: #fff;
+  border-bottom: 3px solid #f8f2fa;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+
+
+  /*Menú Reservar*/
+  .contenedor-Platos > h2{
+    display: flex; 
+    margin-bottom: 15px;
+    display: inline-block;
+
+  }
+  .SectionEnviarReservas > h1{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  /*Formulario Contacto.html*/
+form{
+  padding: 20px;
+  max-width: 400px;
+  background-color: #cda3f1;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border-radius: 5px;
+
+}
+
+form input, form textarea{
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box; 
+  border: none; 
+  color: #525c66; 
+  font-size: 1em;
+  resize: none; 
+  border-radius: 3px;
+}
+
+form button {
+	display: block;
+	background-color: #0095eb;
+	padding: 10px 45px 10px 45px;
+	border: 0;
+	font-size: 1em; 
+	color: 	white;
+  font-family: "Roboto", sans-serif;
+}
+.SectionEnviarConsuta > h1{
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/*Responsive*/
+@media screen and (max-width:500px){
+  /*Menú navegacion*/
+  nav{
+    text-align: center;
+    padding: 30px 0 0 0;
+  }
+  nav > a{
+    margin-right: 5px;
+  }
+
+  /*Titulo headers*/
+  .textos-header h1{
+    font-size: 35px;
+  }
+  .textos-header h2{
+    font-size: 20px;
+  }
+
+  /*Imagenes*/
+  .img{
+    width: 90px;
+    height: auto;
+  }
+  .servicio-cont{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .servicio-ind{
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Footer */
+  .contenedor-footer{
+      flex-direction: column;
+      border: none;
+  }
+  .content-foo{
+      margin-bottom: 20px;
+      text-align: center;
+  }
+  .content-foo h4{
+      border: none;
+  }
+  .content-foo p{
+      color: #ccc;
+      border-bottom: 1px solid #f2f2f2;
+      padding-bottom: 20px;
+  }
+  /*Form Contactos*/
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  /*Quienes somos*/
+  .servicio-cont{
+    display:grid;
+    grid-template-columns:none;
+    grid-template-rows: auto;
+    justify-content:space-evenly;
+  }
+.servicio-ind{
+  margin-right: 10px;
+}
+}

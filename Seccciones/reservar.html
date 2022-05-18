@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Css/estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CATALINA</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="Quienes somos.html">Nosotros</a>
+            <a href="Menu.html">Menú</a>
+            <a href="reservar.html">Reservar</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <section class="textos-header">
+            <h1>CATALINA RESTO BAR</h1>
+            <h2>Bienvenido al mejor resto de Zapala</h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C297.68,23.20 88.31,132.73 500.00,49.98 L509.87,179.13 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+    </header>
+        <main>
+        <section class="SectionEnviarConsuta">
+            <h1 class="subtitulos">RESERVAR</h1>
+            <div class="Contenedor-formConsulta">
+                <form action="https://formspree.io/f/mvolwdav"method="POST">	
+                    <input name="nombre" type="text" placeholder="Nombre y Apellido" maxlength="30" pattern="[a-zA-Z0-9]+" required autofocus/>
+                    <input name="telefono" type="telefono" placeholder="Teléfono" required />	
+                    <input name="number" type="number" placeholder="Cantidad de personas" required />	
+                    <input type="datetime-local" id="date" name="date" required>
+                    <label for="">Tenga en cuenta que es una reserva provisoria. Caso que no se encuentre disponible dicho día y horario nos comunicaremos bremente. </label><br>
+                    <br>
+                    <button id="reservar" name="reservar" type="submit" class="css-button-sliding-to-top--red">RESERVAR</button>
+    </form>	
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Teléfono</h4>
+                <p>2942 423200</p>
+            </div>
+            <div class="content-foo">
+                <h4>Dirección</h4>
+                <p>L. Houssay 326,Zapala,Neuquen</p>
+            </div>
+            <div class="content-foo">
+                <h4>Mail</h4>
+                <p>contacto@catalinaresto.com.ar</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
